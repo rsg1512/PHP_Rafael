@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Vendas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Registro de Venda</h1>
+    
+    <form method="POST" action="venda.php">
+        <div class="campo">
+            <label>Nome do Cliente:</label>
+            <input type="text" name="nome_cliente" required>
+        </div>
+
+        <div class="campo checkbox-group">
+            <input type="checkbox" id="vip" name="cliente_vip" value="sim">
+            <label for="vip">Cliente VIP?</label>
+        </div>
+
+        <hr>
+
+        <div class="campo">
+            <label>Nome do Produto:</label>
+            <input type="text" name="nome_produto" required>
+        </div>
+
+        <div class="campo">
+            <label>Qtd. em Estoque:</label>
+            <input type="number" name="qtd_estoque" required>
+        </div>
+
+        <div class="campo">
+            <label>Valor Unitário (R$):</label>
+            <input type="number" name="valor_unitario" step="0.01" required>
+        </div>
+
+        <div class="campo">
+            <label>Quantidade Vendida:</label>
+            <input type="number" name="qtd_vendida" required>
+        </div>
+
+        <input type="submit" value="Finalizar Venda">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Vendas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Registro de Venda</h1>
+    
+    <form method="POST" action="venda.php">
+        <div class="campo">
+            <label for="cliente">Nome do Cliente:</label>
+            <input type="text" id="cliente" name="nome_cliente" required>
+        </div>
+
+        <div class="campo">
+            <E-mail for="produto">E-mail do Cliente:</E-mail>
+            <input type="email" id="produto" name="e-mail_cliente" required>
+        </div>
+
+        <div class="campo">
+            <label for="estoque">Senha do Cliente:</label>
+            <input type="password" id="estoque" name="senha_cliente" min="0" required>
+        </div>
+
+        
+        <input type="submit" value="Registrar Usuário">
+    </form>
+
+</body>
+</html>

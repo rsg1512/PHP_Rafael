@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Estilizado</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cadastro de Informações Pessoais</h2>
+        <form action="insert-usuarios.php" method="POST">
+            <label for="nome">usuario:</label>
+            <input type="text" id="user" name="nm_user" required>
+
+            <label for="login">login:</label>
+            <input type="text" id="login" name="nm_login" required>
+
+            <label for="senha">Senha:</label>
+            <input type="text" id="Senha" name="ds_password" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="ds_email" required>
+
+            <button type="submit">Confirmar</button>
+        </form>
+    </div>
+  
+</body>
+</html>
